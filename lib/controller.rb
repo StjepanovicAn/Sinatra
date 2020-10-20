@@ -15,7 +15,9 @@ class ApplicationController < Sinatra::Base
 		redirect '/'
 	end
 
-	get '/gossips :1' do
-		puts "#{params["gossip_author"]}"
+	get '/gossips/:id' do
+		Gossip.find(id)
+		erb :show
+		
 	end
 end

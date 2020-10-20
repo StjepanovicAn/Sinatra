@@ -23,7 +23,7 @@ class Gossip
 
 	def self.find(id)
 		index_gossip = Gossip.all
-		return Gossip(id.index)
+		return index_gossip.Gossip.id
 
 	end
 end
